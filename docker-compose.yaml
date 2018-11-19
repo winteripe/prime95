@@ -1,0 +1,15 @@
+version: "3"
+services:
+  prime95:
+    image: winteripe/prime95:latest
+    environment:
+    - V5UserID=HaochenLiu
+    - ComputerID=HaochenLiuTest
+    deploy:
+      resources:
+        limits:
+          cpus: '0.85'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 200M
